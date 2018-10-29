@@ -10,9 +10,9 @@ inputs:
 - name: source
 
 params:
-    heroku_email:
-    heroku_api_token:
-    app_name:
+    heroku_email: jarandwaagekleppa@gmail.com
+    heroku_api_token: b6a1c626-30dc-4e72-803d-207b7fad28c6
+    app_name: jwk-monitor
 
 run:
   path: sh

@@ -3,3 +3,6 @@ deploy_infra.pub
 credentials.yaml
 .terraform
 
+monitor-infra.key
+monitor-infra-key
+monitor-infra-key.pub
