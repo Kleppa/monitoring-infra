@@ -10,10 +10,9 @@ inputs:
 - name: source
 
 params:
-    heroku_email: jarandwaagekleppa@gmail.com
-    heroku_api_token: b6a1c626-30dc-4e72-803d-207b7fad28c6
-    app_name: jwk-monitor
-
+    heroku_email: 
+    heroku_api_key: 
+    app_name: 
 run:
   path: sh
   dir: source
@@ -23,9 +22,10 @@ run:
       cat > /root/.netrc <<EOF
       machine api.heroku.com
           login ${heroku_email}
-          password ${heroku_api_token}
+          password ${heroku_api_key}
       machine git.heroku.com
           login ${heroku_email}
-          password ${heroku_api_token}
+          password ${heroku_api_key}
       EOF
+      cat /root/.netrc
       git push https://git.heroku.com/${app_name}.git master:refs/heads/master

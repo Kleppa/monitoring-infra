@@ -21,6 +21,7 @@ setup() {
     export DIR="$PWD"
     export GITHUB_TOKEN="${github_token}"
     export HEROKU_API_KEY="${heroku_api_key}"
+    echo $HEROKU_API_KEY
     export STATUSCAKE_APIKEY="${statuscake_api_key}"
 }
 
